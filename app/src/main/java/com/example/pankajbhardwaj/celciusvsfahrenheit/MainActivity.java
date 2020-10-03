@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText etxt = (EditText) findViewById(R.id.editText);
                 int c = Integer.parseInt(etxt.getText().toString());
                 double f = 1.8 * c + 32;
-                TextView txt = (TextView) findViewById(R.id.rlt);
-                txt.setText(String.format("%.3f",f));
+                TextView temp = (TextView) findViewById(R.id.rlt);
+                temp.setText(String.format("%.3f",f));
             }
         });
     }
